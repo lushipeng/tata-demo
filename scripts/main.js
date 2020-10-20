@@ -1,5 +1,5 @@
 const btn = document.querySelector('button');
-const worker = new Worker('worker.js');
+const worker = new Worker('scripts/worker.js');
 
 btn.addEventListener('click', function() {
     worker.postMessage('Go!');
